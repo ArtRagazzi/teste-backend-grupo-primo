@@ -65,7 +65,7 @@ class TransacaoServiceTest {
                 try {
                     transacaoService.transferir(contaA.numberoConta, contaB.numberoConta, 400.0)
                 } catch (e: Exception) {
-                    // Handle exception if needed
+                    e.printStackTrace()
                 }
             }
         }
