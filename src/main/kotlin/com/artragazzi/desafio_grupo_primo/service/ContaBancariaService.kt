@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional
 class ContaBancariaService {
 
     @Autowired
-    private lateinit var contaBancariaRepository: ContaBancariaRepository
+    lateinit var contaBancariaRepository: ContaBancariaRepository
     private val logs = LoggerFactory.getLogger((Transacao::class.java))
 
     @Transactional
